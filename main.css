@@ -1,0 +1,21 @@
+body {
+    font-family: "dosis"; 
+    background-image: url("static/pastel.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 15px;
+    text-wrap: wrap;
+    word-spacing: 2px;
+}
+
+hr {border-top: 2px solid rgb(0, 0, 0)}
+
+.margin-left {margin-left: 20px;}
+
+.dosis-regular {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

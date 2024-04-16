@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>POTATOOO</title>
+</head>
+
+<body>
+    <header>
+        <h1>POTATOOO Form</h1>
+    </header>
+
+    <hr >
+
+    <main>
+        <form action="/submit" method="POST">
+            <label for = "email">Please enter your email</label>
+            <br>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" placeholder="Example@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+
+            <br>
+            <label for = "quantity">Please enter your quantity</label>
+            <br>
+            <label for="quantity"><strong>Quantity:</strong></label>
+            <input type="number" name='quantity' min="10" max="1000" step="10" placeholder="number" autocomplete="on">
+
+            <br>
+            <br>
+            <label for = "date">Please enter your date</label>
+            <br>
+            <label for="date"><strong>Date:</strong></label>
+            <input type="date" name="date">
+            <br>
+            <br>
+
+            <label for = "color">Please enter your color</label>
+            <br>
+            <label class = "margin-left" for="color"><strong>Color:</strong></label>
+            <input type = "color" name = "color" value = "#FFD1DC">
+            <br>
+            <br>
+            <label for="Language"><strong>Favorite programming language:</strong></label>
+            <select name="Language" id="Language" aria-label="Favorite Programming Language">
+                <option value="Python">Python</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="MySQL">MySQL</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            
+                <input type="radio" name="level" value="beginner" aria-label ="beginner">
+                <label for="level">Beginner</label>
+                <input type="radio" name="level" value="intermediate" aria-label ="intermediate">
+                <label for="level">Intermediate</label>
+                <input type="radio" name="level" value="advanced" aria-label ="advanced">
+                <label for="level">Advanced</label>
+            </select>
+
+            <br>
+            <br>
+
+            <label for = "web"><strong>Select preferred platforms:</strong></label>
+            <label for="web">Web</label>
+            <input type="checkbox" name="web" value="true" aria-label="web">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" name="mobile" value="true" aria-label="mobile">
+            <label for="desktop">Desktop</label>
+            <input type="checkbox" name="desktop" value="true" aria-label="desktop">
+            <br>
+            <br>
+
+            <button type="reset" aria-label = "reset"><strong>Reset</strong></button>
+            <button class = "margin-left" type="submit" aria-label = "submit"><strong>Submit</strong></a></button>
+
+        </form>
+</body>
+</html>
